@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
 <?import javafx.scene.shape.*?>
-
 <?import javafx.scene.layout.*?>
-
 
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tao.fx.Controller">
     <children>
         <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
             <children>
-                <Circle fx:id="circle"  fill="#ccd8e4" layoutX="300" layoutY="200" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
-                <Arc fx:id="arc1" fill="DODGERBLUE" layoutX="300" layoutY="200" length="45.0" radiusX="100.0" radiusY="100.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="arc2" fill="DODGERBLUE" layoutX="300" layoutY="200" length="45.0" radiusX="100.0" radiusY="100.0" startAngle="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="arc3" fill="DODGERBLUE" layoutX="300" layoutY="200" length="45.0" radiusX="100.0" radiusY="100.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-                <Arc fx:id="arc4" fill="DODGERBLUE" layoutX="300" layoutY="200" length="45.0" radiusX="100.0" radiusY="100.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
-            </children>
+                <Circle fx:id="circle" fill="#ccd8e4" layoutX="300" layoutY="200" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+             </children>
         </Pane>
+      <Pane fx:id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="86.0" layoutX="271.0" layoutY="165.0" onMouseClicked="#rotate" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="image/1.jpg" />
+              </image>
+            </ImageView>
+        </children>
+      </Pane>
     </children>
     <columnConstraints>
         <ColumnConstraints />
